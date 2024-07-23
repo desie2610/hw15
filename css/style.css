@@ -3,31 +3,30 @@
 .holder {
     display: flex;
     flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 100px 100px 0 0;
 }
 
 .item {
-       
+    flex-grow: 1;
     background-color: aqua;
     color: black;
-     width: 350px;
     height: 150px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
 }
 
 .item:nth-child(1) {
     background-color: red;
     order: -3;
-    flex-grow: 1.5;
     flex-basis: calc(100%/2);
+    border-radius: 100px 0 0 0;
 }
 
 .item:nth-child(2) {
     background-color: blue;
     order: 1;
-    
 }
 
 .item:nth-child(3) {
@@ -45,8 +44,8 @@
 .item:nth-child(5) {
     background-color: yellow;
     order: -2;
-    flex-grow: 1.5;
-    flex-grow: calc(100%/2);
+    flex-basis: calc(100%/2);
+    border-radius: 0 100px 0 0;
 }
 
 
